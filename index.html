@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <style>
+            .pet{
+                display: flex;
+                justify-content: center;
+            }
+
+        </style>
+        <script src="app.js"></script>
+    </head>
+    <body style="background-image: url(Background.png);">
+
+        <h1>Pet simulator demo</h1><br>
+        <h2>Instructions:</h2>
+        <p>feed your pet by typing in "feed". <br>
+            get your pet to play by typing in "play" </p>
+        <h2>Items</h2>
+        <p id="items"></p>
+        <div  class="pet">
+        <img src="pet.png" alt="blob-creature">
+        </div>
+
+        <div class="pet">
+            <p id="bar"></p>
+        </div>
+
+        <div class="pet"><p>type in what to do for your pet</p></div>
+        <div class="pet">
+            <input id="itemChoice" value="">
+            <button onclick="feeding()">click</button>
+        </div>
+
+<script>
+    document.getElementById("bar").innerHTML= "hunger:" + wellnessStatus.hunger +
+    "<br>" + "Happy: " + wellnessStatus.happy;
+    document.getElementById("items").innerHTML=food;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
